@@ -24,7 +24,7 @@ public class LoginTest {
 
 		// create a object for a property class
 		FileInputStream file = new FileInputStream("D:\\Inv_Login\\src\\main\\java\\com\\inv\\Login\\LoginData");
-
+System.out.println("am in maven project");
 		// method is pass to property file
 		prop.load(file);
 		driver.get(prop.getProperty("url"));
