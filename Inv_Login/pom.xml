@@ -26,11 +26,7 @@
 			<artifactId>testng</artifactId>
 			<version>6.8</version>
 </dependency>
-<dependency>
-    <groupId>com.github.detro.ghostdriver</groupId>
-    <artifactId>phantomjsdriver</artifactId>
-    <version>1.0.1</version>
-</dependency>
+		
 	</dependencies>
 	<build>
 		<plugins>

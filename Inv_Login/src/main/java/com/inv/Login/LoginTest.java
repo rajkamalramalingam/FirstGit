@@ -7,9 +7,8 @@ import java.util.Properties;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.Test;
-
-
 
 public class LoginTest {
 	protected WebDriver driver;
@@ -20,11 +19,15 @@ public class LoginTest {
 	public void Loginvalidation() throws IOException {
 
 		System.setProperty("webdriver.chrome.driver", "C://Users//Admin//Desktop//chromedriver.exe");
-		driver = new ChromeDriver();
 
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--headless");
+		options.addArguments("--disable-gpu");
+		options.addArguments("window-size=1366,768");
+		driver = new ChromeDriver(options);
 		// create a object for a property class
 		FileInputStream file = new FileInputStream("D:\\Inv_Login\\src\\main\\java\\com\\inv\\Login\\LoginData");
-System.out.println("am in maven project");
+		System.out.println("am in maven project");
 		// method is pass to property file
 		prop.load(file);
 		driver.get(prop.getProperty("url"));
