@@ -14,16 +14,16 @@ public class LoginTest {
 	protected WebDriver driver;
 	protected Properties prop = new Properties();
 	// private static WebDriver driver;
-
+             
 	@Test(priority = 1)
 	public void Loginvalidation() throws IOException {
 
 		System.setProperty("webdriver.chrome.driver", "C://Users//Admin//Desktop//chromedriver.exe");
 
-		ChromeOptions options = new ChromeOptions();
+		ChromeOptions options = new ChromeOptions(); 
 		options.addArguments("--headless");
 		options.addArguments("--disable-gpu");
-		options.addArguments("window-size=1366,768");
+		//options.addArguments("window-size=1366,768");
 		driver = new ChromeDriver(options);
 		// create a object for a property class
 		FileInputStream file = new FileInputStream("D:\\Inv_Login\\src\\main\\java\\com\\inv\\Login\\LoginData");
