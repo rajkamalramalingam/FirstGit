@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="9129" started-at="2019-05-17T12:13:08Z" finished-at="2019-05-17T12:13:17Z">
+  <suite name="Suite" duration-ms="13214" started-at="2019-05-22T09:42:50Z" finished-at="2019-05-22T09:43:03Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="9129" started-at="2019-05-17T12:13:08Z" finished-at="2019-05-17T12:13:17Z">
+    <test name="Test" duration-ms="13214" started-at="2019-05-22T09:42:50Z" finished-at="2019-05-22T09:43:03Z">
       <class name="com.inv.Login.LoginTest">
-        <test-method status="PASS" signature="Loginvalidation()[pri:0, instance:com.inv.Login.LoginTest@79be86]" name="Loginvalidation" duration-ms="9118" started-at="2019-05-17T17:43:08Z" finished-at="2019-05-17T17:43:17Z">
+        <test-method status="PASS" signature="Loginvalidation()[pri:0, instance:com.inv.Login.LoginTest@1bbe5e8]" name="Loginvalidation" duration-ms="13204" started-at="2019-05-22T15:12:50Z" finished-at="2019-05-22T15:13:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Loginvalidation -->
