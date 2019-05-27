@@ -31,7 +31,7 @@ public class LoginTest {
 		options.addArguments("window-size=1366,768");
 		driver = new ChromeDriver(options);
 		// create a object for a property class
-		FileInputStream file = new FileInputStream("D:\\Inv_Login\\src\\main\\java\\com\\inv\\Login\\LoginData");
+		FileInputStream file = new FileInputStream("D:\\Inv_Login\\src\\main\\java\\com\\inv\\Login\\LogiNData");
 		System.out.println("am in maven project");
 		// method is pass to property file
 		prop.load(file);
