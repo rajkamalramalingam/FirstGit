@@ -31,12 +31,12 @@ public class LoginTest {
 		options.addArguments("window-size=1366,768");
 		driver = new ChromeDriver(options);
 		// create a object for a property class
-		FileInputStream file = new FileInputStream("D:\\Inv_Login\\src\\main\\java\\com\\inv\\Login\\LogiNData");
+		FileInputStream file = new FileInputStream("D:\\Inv_Login\\src\\main\\java\\com\\inv\\Login\\LoginData");
 		System.out.println("am in maven project");
 		// method is pass to property file
 		prop.load(file);
 		driver.get(prop.getProperty("url"));
-		driver.findElement(By.id(prop.getProperty("Id_id"))).sendKeys(prop.getProperty("loginid"));
+		//driver.findElement(By.id(prop.getProperty("Id_id"))).sendKeys(prop.getProperty("loginid"));
 		driver.findElement(By.id(prop.getProperty("Pswd"))).sendKeys(prop.getProperty("password"));
 		driver.findElement(By.id("btnSubmit")).click();
 		Thread.sleep(1000);
